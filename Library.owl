@@ -1,0 +1,405 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY ont "http://www.co-ode.org/ontologies/ont.owl#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY p0 "http://www.semanticweb.org/admin/ontologies/2019/0/untitled-ontology-5" >
+    <!ENTITY untitled-ontology-5 "http://www.semanticweb.org/admin/ontologies/2019/0/untitled-ontology-5#" >
+]>
+
+
+<rdf:RDF xmlns="&p0;#"
+     xml:base="http://www.semanticweb.org/admin/ontologies/2019/0/untitled-ontology-5"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-5="&p0;#"
+     xmlns:ont="http://www.co-ode.org/ontologies/ont.owl#"
+     xmlns:p0="http://www.semanticweb.org/admin/ontologies/2019/0/untitled-ontology-5"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/admin/ontologies/2019/0/untitled-ontology-5">
+        <ont:OWLAnnotationProperty_6224d6b0_eb9a_492b_90ac_ce59eacfd0e3 rdf:resource="&xsd;anyURI"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#OWLAnnotationProperty_6224d6b0_eb9a_492b_90ac_ce59eacfd0e3 -->
+
+    <owl:AnnotationProperty rdf:about="&ont;OWLAnnotationProperty_6224d6b0_eb9a_492b_90ac_ce59eacfd0e3">
+        <rdfs:label xml:lang="en">ex</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2019/0/untitled-ontology-5#Creates -->
+
+    <owl:ObjectProperty rdf:about="&p0;#Creates">
+        <rdfs:range rdf:resource="&p0;#Bill"/>
+        <rdfs:domain rdf:resource="&p0;#Librarian"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2019/0/untitled-ontology-5#Issues -->
+
+    <owl:ObjectProperty rdf:about="&p0;#Issues">
+        <rdfs:range rdf:resource="&p0;#Book"/>
+        <rdfs:domain rdf:resource="&p0;#Librarian"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2019/0/untitled-ontology-5#Pays -->
+
+    <owl:ObjectProperty rdf:about="&p0;#Pays">
+        <rdfs:range rdf:resource="&p0;#Bill"/>
+        <rdfs:domain rdf:resource="&p0;#Customer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2019/0/untitled-ontology-5#Refers -->
+
+    <owl:ObjectProperty rdf:about="&p0;#Refers">
+        <rdfs:domain rdf:resource="&p0;#Bill"/>
+        <rdfs:range rdf:resource="&p0;#Transaction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2019/0/untitled-ontology-5#Requests -->
+
+    <owl:ObjectProperty rdf:about="&p0;#Requests">
+        <rdfs:range rdf:resource="&p0;#Book"/>
+        <rdfs:domain rdf:resource="&p0;#Customer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2019/0/untitled-ontology-5#TransactionBookID -->
+
+    <owl:DatatypeProperty rdf:about="&p0;#TransactionBookID">
+        <rdfs:domain rdf:resource="&p0;#Transaction"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2019/0/untitled-ontology-5#TransactionID -->
+
+    <owl:DatatypeProperty rdf:about="&p0;#TransactionID">
+        <rdfs:domain rdf:resource="&p0;#Transaction"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2019/0/untitled-ontology-5#TransactionMemberID -->
+
+    <owl:DatatypeProperty rdf:about="&p0;#TransactionMemberID">
+        <rdfs:domain rdf:resource="&p0;#Transaction"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2019/0/untitled-ontology-5#billAmount -->
+
+    <owl:DatatypeProperty rdf:about="&p0;#billAmount">
+        <rdfs:domain rdf:resource="&p0;#Bill"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2019/0/untitled-ontology-5#billDate -->
+
+    <owl:DatatypeProperty rdf:about="&p0;#billDate">
+        <rdfs:domain rdf:resource="&p0;#Bill"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2019/0/untitled-ontology-5#billMemberID -->
+
+    <owl:DatatypeProperty rdf:about="&p0;#billMemberID">
+        <rdfs:domain rdf:resource="&p0;#Bill"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2019/0/untitled-ontology-5#billNo -->
+
+    <owl:DatatypeProperty rdf:about="&p0;#billNo">
+        <rdfs:domain rdf:resource="&p0;#Bill"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2019/0/untitled-ontology-5#bookAuthor -->
+
+    <owl:DatatypeProperty rdf:about="&p0;#bookAuthor">
+        <rdfs:domain rdf:resource="&p0;#Book"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2019/0/untitled-ontology-5#bookID -->
+
+    <owl:DatatypeProperty rdf:about="&p0;#bookID">
+        <rdfs:domain rdf:resource="&p0;#Book"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2019/0/untitled-ontology-5#bookName -->
+
+    <owl:DatatypeProperty rdf:about="&p0;#bookName">
+        <rdfs:domain rdf:resource="&p0;#Book"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2019/0/untitled-ontology-5#bookPrice -->
+
+    <owl:DatatypeProperty rdf:about="&p0;#bookPrice">
+        <rdfs:domain rdf:resource="&p0;#Book"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2019/0/untitled-ontology-5#bookStatus -->
+
+    <owl:DatatypeProperty rdf:about="&p0;#bookStatus">
+        <rdfs:domain rdf:resource="&p0;#Book"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2019/0/untitled-ontology-5#customerNoBookIssued -->
+
+    <owl:DatatypeProperty rdf:about="&p0;#customerNoBookIssued">
+        <rdfs:domain rdf:resource="&p0;#Customer"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2019/0/untitled-ontology-5#customerPhoneNo -->
+
+    <owl:DatatypeProperty rdf:about="&p0;#customerPhoneNo">
+        <rdfs:domain rdf:resource="&p0;#Customer"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2019/0/untitled-ontology-5#personID -->
+
+    <owl:DatatypeProperty rdf:about="&p0;#personID">
+        <rdfs:domain rdf:resource="&p0;#Person"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2019/0/untitled-ontology-5#personName -->
+
+    <owl:DatatypeProperty rdf:about="&p0;#personName">
+        <rdfs:domain rdf:resource="&p0;#Person"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2019/0/untitled-ontology-5#Bill -->
+
+    <owl:Class rdf:about="&p0;#Bill"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2019/0/untitled-ontology-5#Book -->
+
+    <owl:Class rdf:about="&p0;#Book"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2019/0/untitled-ontology-5#Customer -->
+
+    <owl:Class rdf:about="&p0;#Customer">
+        <rdfs:subClassOf rdf:resource="&p0;#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2019/0/untitled-ontology-5#Librarian -->
+
+    <owl:Class rdf:about="&p0;#Librarian">
+        <rdfs:subClassOf rdf:resource="&p0;#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2019/0/untitled-ontology-5#Person -->
+
+    <owl:Class rdf:about="&p0;#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2019/0/untitled-ontology-5#Transaction -->
+
+    <owl:Class rdf:about="&p0;#Transaction"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2019/0/untitled-ontology-5#Bill_1 -->
+
+    <owl:NamedIndividual rdf:about="&p0;#Bill_1">
+        <rdf:type rdf:resource="&p0;#Bill"/>
+        <billNo rdf:datatype="&xsd;integer">01</billNo>
+        <billMemberID rdf:datatype="&xsd;integer">010</billMemberID>
+        <billDate rdf:datatype="&xsd;string">1-1-1991</billDate>
+        <billAmount rdf:datatype="&xsd;float">150.0</billAmount>
+        <Refers rdf:resource="&p0;#Transaction_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2019/0/untitled-ontology-5#Book_1 -->
+
+    <owl:NamedIndividual rdf:about="&p0;#Book_1">
+        <rdf:type rdf:resource="&p0;#Book"/>
+        <bookID rdf:datatype="&xsd;integer">001</bookID>
+        <bookPrice rdf:datatype="&xsd;float">100.0</bookPrice>
+        <bookAuthor rdf:datatype="&xsd;string">Paul</bookAuthor>
+        <bookName rdf:datatype="&xsd;string">Software Engineering</bookName>
+        <bookStatus rdf:datatype="&xsd;boolean">true</bookStatus>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2019/0/untitled-ontology-5#Customer_1 -->
+
+    <owl:NamedIndividual rdf:about="&p0;#Customer_1">
+        <rdf:type rdf:resource="&p0;#Customer"/>
+        <personName rdf:datatype="&xsd;string"></personName>
+        <customerNoBookIssued rdf:datatype="&xsd;integer">001</customerNoBookIssued>
+        <customerPhoneNo rdf:datatype="&xsd;string">01091870609</customerPhoneNo>
+        <personID rdf:datatype="&xsd;integer">111
+</personID>
+        <Pays rdf:resource="&p0;#Bill_1"/>
+        <Requests rdf:resource="&p0;#Book_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2019/0/untitled-ontology-5#Librarian_1 -->
+
+    <owl:NamedIndividual rdf:about="&p0;#Librarian_1">
+        <rdf:type rdf:resource="&p0;#Librarian"/>
+        <Creates rdf:resource="&p0;#Bill_1"/>
+        <Issues rdf:resource="&p0;#Book_1"/>
+        <Creates rdf:resource="&p0;#Transaction_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2019/0/untitled-ontology-5#Transaction_1 -->
+
+    <owl:NamedIndividual rdf:about="&p0;#Transaction_1">
+        <rdf:type rdf:resource="&p0;#Transaction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&p0;#Bill"/>
+            <rdf:Description rdf:about="&p0;#Book"/>
+            <rdf:Description rdf:about="&p0;#Customer"/>
+            <rdf:Description rdf:about="&p0;#Librarian"/>
+            <rdf:Description rdf:about="&p0;#Transaction"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
